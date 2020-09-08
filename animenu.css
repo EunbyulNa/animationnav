@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+
+header {
+
+  height: 50px;
+  width: 600px;
+  margin: 0 auto;
+}
+
+
+
+ ul.nav > li {
+   height: 50px;
+   text-align: center;
+   width: 150px;
+   float:left;
+   overflow: hidden;
+ }
+
+
+ ul.nav > li > a {
+   font-size: 20px;
+  line-height: 50px;
+  display: block;
+ }
+
+
+ ul.sub {
+   background-color: rgba(255, 255, 255, 0.5);
+   line-height: 25px;
+ }
+
+
+ ul.nav > li:hover{
+   animation-name: menu;
+   animation-duration: .5s;
+   animation-fill-mode: forwards; /*에니메이션 작동후 상태*/
+
+ }
+
+
+ @keyframes menu {
+     0%{ height:50px;}
+    100%{ height: 150px;}
+ }
+
+
+#visual {
+  height: 550px;
+background: url('visual.jpg') center;
+}
